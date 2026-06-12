@@ -1,0 +1,95 @@
+/* Reset básico */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body{
+    background:#f4f9f4; /* cor de fundo clara */
+    color:#333; /* cor do texto */
+}
+
+/* Cabeçalho */
+header{
+    background: linear-gradient(135deg,#2e7d32,#66bb6a); /* degradê verde */
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+/* Navegação */
+nav{
+    background:#1b5e20;
+    padding:15px;
+    text-align:center;
+    position:sticky; /* fica no topo ao rolar */
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+/* Seções */
+section{
+    padding:60px 10%;
+}
+
+/* Números animados */
+#contador{
+    text-align:center;
+    background:#e8f5e9;
+    padding:50px;
+}
+
+#numero{
+    font-size:4rem;
+    color:#2e7d32;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+/* Botão */
+button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+/* Rodapé */
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Responsividade */
+@media(max-width:768px){
+    header h1{
+        font-size:2rem;
+    }
+}
