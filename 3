@@ -1,0 +1,13 @@
+function iniciarContador() {
+    let numero = 0; // Começa em 0
+    const alvo = 1000; // Número final desejado
+
+    const contador = setInterval(() => {
+        numero += 10; // Aumenta de 10 em 10
+        document.getElementById("numero").textContent = numero; // Atualiza o HTML
+
+        if(numero >= alvo){ // Para quando chega ao alvo
+            clearInterval(contador);
+        }
+    }, 20); // Intervalo de 20ms entre cada incremento
+}
